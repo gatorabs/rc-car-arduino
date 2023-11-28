@@ -77,10 +77,8 @@ void updateSerial(){
   }
 }
 void linearSpeedFB(char side){
-  for(byte i = 0; i < 255; i++){
-    
-    i = i + 10;
-    
+  for(byte i = 0; i < 255; i = i + 10){
+
     m1.setSpeed(i);
     m2.setSpeed(i);
 
